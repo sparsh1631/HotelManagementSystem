@@ -54,10 +54,3 @@ public class JWTAuthFilter extends OncePerRequestFilter {
 }
 
 
-//1️⃣ Extracts JWT token from Authorization header.
-//        2️⃣ Validates the token using JWTUtils.
-//3️⃣ Extracts the user email from the token.
-//4️⃣ Loads user details from CachingUserDetailsService.
-//5️⃣ Authenticates the user if the token is valid.
-//        6️⃣ Stores authentication in SecurityContextHolder, allowing the user to access secured endpoints.
-//        7️⃣ Passes the request to the next filter.

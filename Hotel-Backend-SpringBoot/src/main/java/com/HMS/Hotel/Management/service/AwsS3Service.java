@@ -15,14 +15,15 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.InputStream;
 
 @Service
-public class AwsS3Service {
-    private final String bucketName="myhms-img";
+public class  AwsS3Service {
+    private final String bucketName="sparsh-hms-image";
 
     @Value("${aws.s3.access.key}")
     private String awsS3AccessKey;
 
     @Value("${aws.s3.secret.key}")
     private String awsS3SecretKey;
+
 
     public String saveImageToS3(MultipartFile photo){
         String s3LocationImage=null;
